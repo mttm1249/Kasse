@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import CoreData
 
 class DetailsViewController: UIViewController {
     
@@ -14,7 +15,7 @@ class DetailsViewController: UIViewController {
     var date: String?
     var detailsCoins: String?
     var detailsPaper: String?
-
+    
     @IBOutlet weak var detailsTotalLabel: UILabel!
     @IBOutlet weak var detailsDateLabel: UILabel!
     @IBOutlet weak var detailsText: UITextView!
@@ -38,7 +39,6 @@ class DetailsViewController: UIViewController {
         guard let detailsPaper = self.detailsPaper else { return }
         
         detailsText.text = "\(detailsCoins)" + "\(detailsPaper)"
-
     }
     
     @objc func backButton() {

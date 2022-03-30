@@ -16,9 +16,9 @@ class HistoryTableView: UIViewController, UITableViewDelegate, UITableViewDataSo
     var recordDate = ""
     var detailsCoins = ""
     var detailsPaper = ""
-
+    
     @IBOutlet weak var tableView: UITableView!
-
+    
     var dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateStyle = .short
@@ -74,7 +74,7 @@ class HistoryTableView: UIViewController, UITableViewDelegate, UITableViewDataSo
         self.tableView.register(textFieldCell,forCellReuseIdentifier: "customTableViewCell")
     }
     
-     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "customTableViewCell") as? CustomTableViewCell {
             let record = records[indexPath.row]
             guard let recordDate = record.date else { return cell }
@@ -85,7 +85,7 @@ class HistoryTableView: UIViewController, UITableViewDelegate, UITableViewDataSo
         return UITableViewCell()
     }
     
-     func numberOfSections(in tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
@@ -93,23 +93,23 @@ class HistoryTableView: UIViewController, UITableViewDelegate, UITableViewDataSo
         return records.count
     }
     
-  
-     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
     
     func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String? {
         return "Löschen"
     }
- 
-     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if (editingStyle == .delete) {
             records.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .bottom)
-
+            
             let context = getContext()
             let fetchRequest: NSFetchRequest<Record> = Record.fetchRequest()
-
+            
             if let records = try? context.fetch(fetchRequest) {
                 let record = records[indexPath.row]
                 context.delete(record)
@@ -125,26 +125,25 @@ class HistoryTableView: UIViewController, UITableViewDelegate, UITableViewDataSo
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let dvc =  segue.destination as? DetailsViewController else { return }
-
+        
         dvc.total = "\(recordTitle)"
         dvc.date = "\(recordDate)"
         dvc.detailsCoins = "\(detailsCoins)"
         dvc.detailsPaper = "\(detailsPaper)"
-  
     }
     
-     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let record = self.records[indexPath.row]
         self.recordTitle = record.title!
         self.recordDate = "\(dateFormatter.string(from:record.date!))"
-         self.detailsCoins = record.detailsCoinsData!
-         self.detailsPaper = record.detailsPaperData!
-
+        self.detailsCoins = record.detailsCoinsData!
+        self.detailsPaper = record.detailsPaperData!
+        
         self.performSegue(withIdentifier: "showDetails", sender: nil)
     }
     
     @IBAction func deleteAllRecordsButton(_ sender: Any) {
-       
+        
         let alertController = UIAlertController(title: "Achtung!", message: "Alle gespeicherte Daten löschen?", preferredStyle: .alert)
         let deleteAction = UIAlertAction(title: "Ja", style: .destructive) { action in
             let context = self.getContext()
@@ -176,7 +175,6 @@ class HistoryTableView: UIViewController, UITableViewDelegate, UITableViewDataSo
     @IBAction func unwindSegueToMainScreen(segue: UIStoryboardSegue) {
         guard segue.identifier == "unwindSegue" else { return }
     }
-    
 }
 
 

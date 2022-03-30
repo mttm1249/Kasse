@@ -7,36 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA2AA0A527E89DE500E8C81F /* RollenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2AA0A427E89DE500E8C81F /* RollenViewController.swift */; };
+		DA2AA0A527E89DE500E8C81F /* RollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2AA0A427E89DE500E8C81F /* RollViewController.swift */; };
 		DA2D216B27E6FC9F002B5CB9 /* coins.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA2D216927E6FC9F002B5CB9 /* coins.xcdatamodeld */; };
 		DA2D216D27E6FE09002B5CB9 /* HistoryTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2D216C27E6FE08002B5CB9 /* HistoryTableView.swift */; };
 		DA2D217127E7026C002B5CB9 /* customTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA2D217027E7026B002B5CB9 /* customTableViewCell.xib */; };
 		DA2D217327E702C7002B5CB9 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2D217227E702C7002B5CB9 /* CustomTableViewCell.swift */; };
 		DA592B5727E7165200D8B884 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA592B5627E7165200D8B884 /* DetailsViewController.swift */; };
 		DA7C637E27E3BE2600BA5E5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C637D27E3BE2600BA5E5A /* AppDelegate.swift */; };
-		DA7C638227E3BE2600BA5E5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C638127E3BE2600BA5E5A /* ViewController.swift */; };
+		DA7C638227E3BE2600BA5E5A /* CoinsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C638127E3BE2600BA5E5A /* CoinsViewController.swift */; };
 		DA7C638727E3BE2700BA5E5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7C638627E3BE2700BA5E5A /* Assets.xcassets */; };
 		DA7C638A27E3BE2700BA5E5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA7C638827E3BE2700BA5E5A /* LaunchScreen.storyboard */; };
 		DA7C639427E3C33600BA5E5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA7C639327E3C33600BA5E5A /* Main.storyboard */; };
-		DA7C639627E3C35200BA5E5A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C639527E3C35200BA5E5A /* SecondViewController.swift */; };
+		DA7C639627E3C35200BA5E5A /* PaperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C639527E3C35200BA5E5A /* PaperViewController.swift */; };
 		DABD411727E5D43600F379B3 /* MainCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD411627E5D43600F379B3 /* MainCalculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DA2AA0A427E89DE500E8C81F /* RollenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollenViewController.swift; sourceTree = "<group>"; };
+		DA2AA0A427E89DE500E8C81F /* RollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollViewController.swift; sourceTree = "<group>"; };
 		DA2D216A27E6FC9F002B5CB9 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		DA2D216C27E6FE08002B5CB9 /* HistoryTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableView.swift; sourceTree = "<group>"; };
 		DA2D217027E7026B002B5CB9 /* customTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = customTableViewCell.xib; sourceTree = "<group>"; };
 		DA2D217227E702C7002B5CB9 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		DA592B5627E7165200D8B884 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
-		DA7C637A27E3BE2600BA5E5A /* coins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coins.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA7C637A27E3BE2600BA5E5A /* Kasse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kasse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA7C637D27E3BE2600BA5E5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DA7C638127E3BE2600BA5E5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DA7C638127E3BE2600BA5E5A /* CoinsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsViewController.swift; sourceTree = "<group>"; };
 		DA7C638627E3BE2700BA5E5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA7C638927E3BE2700BA5E5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA7C638B27E3BE2700BA5E5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA7C639327E3C33600BA5E5A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		DA7C639527E3C35200BA5E5A /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		DA7C639527E3C35200BA5E5A /* PaperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaperViewController.swift; sourceTree = "<group>"; };
 		DABD411627E5D43600F379B3 /* MainCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,6 +51,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA4EB73727EA2D60004BA383 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA7C638127E3BE2600BA5E5A /* CoinsViewController.swift */,
+				DA7C639527E3C35200BA5E5A /* PaperViewController.swift */,
+				DA2AA0A427E89DE500E8C81F /* RollViewController.swift */,
+				DA2D216C27E6FE08002B5CB9 /* HistoryTableView.swift */,
+				DA592B5627E7165200D8B884 /* DetailsViewController.swift */,
+				DA2D217227E702C7002B5CB9 /* CustomTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DA4EB73827EA2D88004BA383 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DABD411627E5D43600F379B3 /* MainCalculator.swift */,
+				DA2D217027E7026B002B5CB9 /* customTableViewCell.xib */,
+				DA2D216927E6FC9F002B5CB9 /* coins.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		DA7C637127E3BE2600BA5E5A = {
 			isa = PBXGroup;
 			children = (
@@ -62,7 +85,7 @@
 		DA7C637B27E3BE2600BA5E5A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DA7C637A27E3BE2600BA5E5A /* coins.app */,
+				DA7C637A27E3BE2600BA5E5A /* Kasse.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,17 +94,10 @@
 			isa = PBXGroup;
 			children = (
 				DA7C637D27E3BE2600BA5E5A /* AppDelegate.swift */,
-				DA7C638127E3BE2600BA5E5A /* ViewController.swift */,
-				DA7C639527E3C35200BA5E5A /* SecondViewController.swift */,
-				DA592B5627E7165200D8B884 /* DetailsViewController.swift */,
-				DA2AA0A427E89DE500E8C81F /* RollenViewController.swift */,
-				DA2D216C27E6FE08002B5CB9 /* HistoryTableView.swift */,
-				DABD411627E5D43600F379B3 /* MainCalculator.swift */,
-				DA2D217227E702C7002B5CB9 /* CustomTableViewCell.swift */,
+				DA4EB73727EA2D60004BA383 /* View */,
 				DA7C639327E3C33600BA5E5A /* Main.storyboard */,
 				DA7C638827E3BE2700BA5E5A /* LaunchScreen.storyboard */,
-				DA2D217027E7026B002B5CB9 /* customTableViewCell.xib */,
-				DA2D216927E6FC9F002B5CB9 /* coins.xcdatamodeld */,
+				DA4EB73827EA2D88004BA383 /* Model */,
 				DA7C638627E3BE2700BA5E5A /* Assets.xcassets */,
 				DA7C638B27E3BE2700BA5E5A /* Info.plist */,
 			);
@@ -91,9 +107,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DA7C637927E3BE2600BA5E5A /* coins */ = {
+		DA7C637927E3BE2600BA5E5A /* Kasse */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DA7C638E27E3BE2700BA5E5A /* Build configuration list for PBXNativeTarget "coins" */;
+			buildConfigurationList = DA7C638E27E3BE2700BA5E5A /* Build configuration list for PBXNativeTarget "Kasse" */;
 			buildPhases = (
 				DA7C637627E3BE2600BA5E5A /* Sources */,
 				DA7C637727E3BE2600BA5E5A /* Frameworks */,
@@ -103,9 +119,9 @@
 			);
 			dependencies = (
 			);
-			name = coins;
+			name = Kasse;
 			productName = coins;
-			productReference = DA7C637A27E3BE2600BA5E5A /* coins.app */;
+			productReference = DA7C637A27E3BE2600BA5E5A /* Kasse.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -123,7 +139,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DA7C637527E3BE2600BA5E5A /* Build configuration list for PBXProject "Coins" */;
+			buildConfigurationList = DA7C637527E3BE2600BA5E5A /* Build configuration list for PBXProject "Kasse" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -136,7 +152,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DA7C637927E3BE2600BA5E5A /* coins */,
+				DA7C637927E3BE2600BA5E5A /* Kasse */,
 			);
 		};
 /* End PBXProject section */
@@ -160,9 +176,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA7C639627E3C35200BA5E5A /* SecondViewController.swift in Sources */,
-				DA7C638227E3BE2600BA5E5A /* ViewController.swift in Sources */,
-				DA2AA0A527E89DE500E8C81F /* RollenViewController.swift in Sources */,
+				DA7C639627E3C35200BA5E5A /* PaperViewController.swift in Sources */,
+				DA7C638227E3BE2600BA5E5A /* CoinsViewController.swift in Sources */,
+				DA2AA0A527E89DE500E8C81F /* RollViewController.swift in Sources */,
 				DA2D216B27E6FC9F002B5CB9 /* coins.xcdatamodeld in Sources */,
 				DA592B5727E7165200D8B884 /* DetailsViewController.swift in Sources */,
 				DA2D217327E702C7002B5CB9 /* CustomTableViewCell.swift in Sources */,
@@ -324,12 +340,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.9;
+				MARKETING_VERSION = 2.5;
 				PRODUCT_BUNDLE_IDENTIFIER = mttm1249.coins;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -355,19 +371,19 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.9;
+				MARKETING_VERSION = 2.5;
 				PRODUCT_BUNDLE_IDENTIFIER = mttm1249.coins;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DA7C637527E3BE2600BA5E5A /* Build configuration list for PBXProject "Coins" */ = {
+		DA7C637527E3BE2600BA5E5A /* Build configuration list for PBXProject "Kasse" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DA7C638C27E3BE2700BA5E5A /* Debug */,
@@ -376,7 +392,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DA7C638E27E3BE2700BA5E5A /* Build configuration list for PBXNativeTarget "coins" */ = {
+		DA7C638E27E3BE2700BA5E5A /* Build configuration list for PBXNativeTarget "Kasse" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DA7C638F27E3BE2700BA5E5A /* Debug */,

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CoinsViewController.swift
 //  coins
 //
 //  Created by Денис on 17.03.2022.

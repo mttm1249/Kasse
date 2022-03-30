@@ -1,5 +1,5 @@
 //
-//  RollenViewController.swift
+//  RollViewController.swift
 //  coins
 //
 //  Created by Денис on 21.03.2022.
@@ -54,6 +54,7 @@ class RollenViewController: UIViewController {
     
     @IBOutlet weak var generallyTotalLabel: UILabel!
     
+    @IBOutlet weak var test: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,7 +67,23 @@ class RollenViewController: UIViewController {
     
     // MARK: - Buttons
     
-    @IBAction func oneCentRollenAction(_ sender: Any) {
+    func buttonAnimation(_ sender: UIButton) {
+        sender.transform = CGAffineTransform(scaleX: 0.6, y: 0.6)
+
+        UIView.animate(withDuration: 1.4,
+                                   delay: 0,
+                                   usingSpringWithDamping: CGFloat(0.2),
+                                   initialSpringVelocity: CGFloat(60.0),
+                                   options: UIView.AnimationOptions.allowUserInteraction,
+                                   animations: {
+                                    sender.transform = CGAffineTransform.identity
+            },
+                                   completion: { Void in()  }
+        )
+    }
+    
+    @IBAction func oneCentRollenAction(_ sender: UIButton) {
+        buttonAnimation(sender)
         feedbackGenerator.impactOccurred()
         oneCentValue += 0.50
         oneCentCounter += 1
@@ -74,7 +91,8 @@ class RollenViewController: UIViewController {
         calculate()
     }
     
-    @IBAction func twoCentRollenAction(_ sender: Any) {
+    @IBAction func twoCentRollenAction(_ sender: UIButton) {
+        buttonAnimation(sender)
         feedbackGenerator.impactOccurred()
         twoCentValue += 1.00
         twoCentCounter += 1
@@ -82,7 +100,8 @@ class RollenViewController: UIViewController {
         calculate()
     }
     
-    @IBAction func fiveCentRollenAction(_ sender: Any) {
+    @IBAction func fiveCentRollenAction(_ sender: UIButton) {
+        buttonAnimation(sender)
         feedbackGenerator.impactOccurred()
         fiveCentValue += 2.50
         fiveCentCounter += 1
@@ -90,7 +109,8 @@ class RollenViewController: UIViewController {
         calculate()
     }
     
-    @IBAction func tenCentRollenAction(_ sender: Any) {
+    @IBAction func tenCentRollenAction(_ sender: UIButton) {
+        buttonAnimation(sender)
         feedbackGenerator.impactOccurred()
         tenCentValue += 4.00
         tenCentCounter += 1
@@ -98,7 +118,8 @@ class RollenViewController: UIViewController {
         calculate()
     }
     
-    @IBAction func twentyCentRollenAction(_ sender: Any) {
+    @IBAction func twentyCentRollenAction(_ sender: UIButton) {
+        buttonAnimation(sender)
         feedbackGenerator.impactOccurred()
         twentyCentValue += 8.00
         twentyCentCounter += 1
@@ -106,7 +127,8 @@ class RollenViewController: UIViewController {
         calculate()
     }
     
-    @IBAction func fiftyCentRollenAction(_ sender: Any) {
+    @IBAction func fiftyCentRollenAction(_ sender: UIButton) {
+        buttonAnimation(sender)
         feedbackGenerator.impactOccurred()
         fiftyCentValue += 20.00
         fiftyCentCounter += 1
@@ -114,7 +136,8 @@ class RollenViewController: UIViewController {
         calculate()
     }
     
-    @IBAction func oneEuroRollenAction(_ sender: Any) {
+    @IBAction func oneEuroRollenAction(_ sender: UIButton) {
+        buttonAnimation(sender)
         feedbackGenerator.impactOccurred()
         oneEuroValue += 25.00
         oneEuroCounter += 1
@@ -122,7 +145,8 @@ class RollenViewController: UIViewController {
         calculate()
     }
     
-    @IBAction func twoEuroRollenAction(_ sender: Any) {
+    @IBAction func twoEuroRollenAction(_ sender: UIButton) {
+        buttonAnimation(sender)
         feedbackGenerator.impactOccurred()
         twoEuroValue += 50.00
         twoEuroCounter += 1
@@ -130,7 +154,8 @@ class RollenViewController: UIViewController {
         calculate()
     }
     
-    @IBAction func hundredEuroRollenAction(_ sender: Any) {
+    @IBAction func hundredEuroRollenAction(_ sender: UIButton) {
+        buttonAnimation(sender)
         feedbackGenerator.impactOccurred()
         oneOneOneEuroValue += 111.00
         oneOneOneEuroCounter += 1

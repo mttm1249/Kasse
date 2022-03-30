@@ -8,7 +8,6 @@
 import Foundation
 import UIKit
 
-
 class CustomTableViewCell: UITableViewCell {
     
     @IBOutlet weak var recordTitleLabel: UILabel!

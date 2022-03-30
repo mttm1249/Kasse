@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  PaperViewController.swift
 //  coins
 //
 //  Created by Денис on 17.03.2022.
