@@ -54,12 +54,9 @@
 		DA4EB73727EA2D60004BA383 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DA7C638127E3BE2600BA5E5A /* CoinsViewController.swift */,
-				DA7C639527E3C35200BA5E5A /* PaperViewController.swift */,
-				DA2AA0A427E89DE500E8C81F /* RollViewController.swift */,
-				DA2D216C27E6FE08002B5CB9 /* HistoryTableView.swift */,
-				DA592B5627E7165200D8B884 /* DetailsViewController.swift */,
-				DA2D217227E702C7002B5CB9 /* CustomTableViewCell.swift */,
+				DA7C639327E3C33600BA5E5A /* Main.storyboard */,
+				DA7C638827E3BE2700BA5E5A /* LaunchScreen.storyboard */,
+				DA2D217027E7026B002B5CB9 /* customTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -67,17 +64,39 @@
 		DA4EB73827EA2D88004BA383 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DABD411627E5D43600F379B3 /* MainCalculator.swift */,
-				DA2D217027E7026B002B5CB9 /* customTableViewCell.xib */,
 				DA2D216927E6FC9F002B5CB9 /* coins.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
+		DA79AC0A28116170004C0A4B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DA7C638127E3BE2600BA5E5A /* CoinsViewController.swift */,
+				DA7C639527E3C35200BA5E5A /* PaperViewController.swift */,
+				DA2AA0A427E89DE500E8C81F /* RollViewController.swift */,
+				DA2D216C27E6FE08002B5CB9 /* HistoryTableView.swift */,
+				DA592B5627E7165200D8B884 /* DetailsViewController.swift */,
+				DA2D217227E702C7002B5CB9 /* CustomTableViewCell.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DA79AC0B28116194004C0A4B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA7C637D27E3BE2600BA5E5A /* AppDelegate.swift */,
+				DABD411627E5D43600F379B3 /* MainCalculator.swift */,
+				DA7C638627E3BE2700BA5E5A /* Assets.xcassets */,
+				DA7C638B27E3BE2700BA5E5A /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		DA7C637127E3BE2600BA5E5A = {
 			isa = PBXGroup;
 			children = (
-				DA7C637C27E3BE2600BA5E5A /* coins */,
+				DA7C637C27E3BE2600BA5E5A /* Kasse */,
 				DA7C637B27E3BE2600BA5E5A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,18 +109,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DA7C637C27E3BE2600BA5E5A /* coins */ = {
+		DA7C637C27E3BE2600BA5E5A /* Kasse */ = {
 			isa = PBXGroup;
 			children = (
-				DA7C637D27E3BE2600BA5E5A /* AppDelegate.swift */,
-				DA4EB73727EA2D60004BA383 /* View */,
-				DA7C639327E3C33600BA5E5A /* Main.storyboard */,
-				DA7C638827E3BE2700BA5E5A /* LaunchScreen.storyboard */,
+				DA79AC0B28116194004C0A4B /* Supporting Files */,
+				DA79AC0A28116170004C0A4B /* Controllers */,
 				DA4EB73827EA2D88004BA383 /* Model */,
-				DA7C638627E3BE2700BA5E5A /* Assets.xcassets */,
-				DA7C638B27E3BE2700BA5E5A /* Info.plist */,
+				DA4EB73727EA2D60004BA383 /* View */,
 			);
-			path = coins;
+			path = Kasse;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,7 +343,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KG89CXC5J4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = coins/Info.plist;
+				INFOPLIST_FILE = "Kasse/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -358,7 +374,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KG89CXC5J4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = coins/Info.plist;
+				INFOPLIST_FILE = "Kasse/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
