@@ -11,6 +11,7 @@ class RollenViewController: UIViewController {
     
     // activate vibration
     let feedbackGenerator = UIImpactFeedbackGenerator(style: .heavy)
+    var buttonBadge = UIView()
         
     var oneCentValue = 0.0
     var twoCentValue = 0.0
@@ -32,6 +33,7 @@ class RollenViewController: UIViewController {
     var twoEuroCounter = 0
     var oneOneOneEuroCounter = 0
     
+    @IBOutlet var allLabels: [UILabel]!
     @IBOutlet var allButtons: [UIButton]!
     
     @IBOutlet weak var oneCentButton: UIButton!
@@ -60,7 +62,6 @@ class RollenViewController: UIViewController {
     @IBOutlet weak var fiftyCentLabel: UILabel!
     @IBOutlet weak var oneEuroLabel: UILabel!
     @IBOutlet weak var twoEuroLabel: UILabel!
-    @IBOutlet weak var hundredEuroLabel: UILabel!
     
     @IBOutlet weak var generallyTotalLabel: UILabel!
     
@@ -158,9 +159,10 @@ class RollenViewController: UIViewController {
             twoEuroLabel.text = "2€: \(NSString(format: "%.2f", twoEuroValue))€ (\(twoEuroCounter))"
             addToTotal(value: 50.00)
         case 9:
-            oneOneOneEuroValue += 111.00
+            addAllOneByOne()
             oneOneOneEuroCounter += 1
-            hundredEuroLabel.text = "111€: \(NSString(format: "%.2f", oneOneOneEuroValue))€ (\(oneOneOneEuroCounter))"
+            buttonBadge.addSubview(showBadge(with: oneOneOneEuroCounter))
+            oneOneOneEuroButton.addSubview(buttonBadge)
             addToTotal(value: 111.00)
         default:
             break
@@ -177,6 +179,7 @@ class RollenViewController: UIViewController {
     
     @IBAction func resetButton(_ sender: Any) {
         feedbackGenerator.impactOccurred()
+        buttonBadge.removeFromSuperview()
         
         oneCentValue = 0.0
         twoCentValue = 0.0
@@ -198,15 +201,8 @@ class RollenViewController: UIViewController {
         twoEuroCounter = 0
         oneOneOneEuroCounter = 0
         total = 0.0
-        
-        oneCentLabel.text = "1c:"
-        twoCentLabel.text = "2c:"
-        fiveCentLabel.text = "5c:"
-        tenCentLabel.text = "10c:"
-        twentyCentLabel.text = "20c:"
-        fiftyCentLabel.text = "50c:"
-        oneEuroLabel.text = "1€:"
-        twoEuroLabel.text = "2€:"
-        hundredEuroLabel.text = "111€:"
+        for label in allLabels {
+            label.text = ""
+        }
     }
 }
