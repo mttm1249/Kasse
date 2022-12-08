@@ -8,36 +8,39 @@
 
 /* Begin PBXBuildFile section */
 		DA2AA0A527E89DE500E8C81F /* RollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2AA0A427E89DE500E8C81F /* RollViewController.swift */; };
-		DA2D216B27E6FC9F002B5CB9 /* coins.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA2D216927E6FC9F002B5CB9 /* coins.xcdatamodeld */; };
-		DA2D216D27E6FE09002B5CB9 /* HistoryTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2D216C27E6FE08002B5CB9 /* HistoryTableView.swift */; };
-		DA2D217127E7026C002B5CB9 /* customTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA2D217027E7026B002B5CB9 /* customTableViewCell.xib */; };
-		DA2D217327E702C7002B5CB9 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2D217227E702C7002B5CB9 /* CustomTableViewCell.swift */; };
-		DA592B5727E7165200D8B884 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA592B5627E7165200D8B884 /* DetailsViewController.swift */; };
+		DA2D216D27E6FE09002B5CB9 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2D216C27E6FE08002B5CB9 /* HistoryViewController.swift */; };
+		DA2D217127E7026C002B5CB9 /* RecordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA2D217027E7026B002B5CB9 /* RecordCell.xib */; };
+		DA2D217327E702C7002B5CB9 /* RecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2D217227E702C7002B5CB9 /* RecordCell.swift */; };
+		DA4CFAC9293FA36100907DA0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4CFAC8293FA36100907DA0 /* MainViewController.swift */; };
+		DA511036293E537C008D0EDF /* RollViewController - Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA511035293E537C008D0EDF /* RollViewController - Extensions.swift */; };
+		DA511038293E5D1E008D0EDF /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA511037293E5D1E008D0EDF /* StorageManager.swift */; };
+		DA51103A293E5F4F008D0EDF /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA511039293E5F4F008D0EDF /* Time.swift */; };
 		DA7C637E27E3BE2600BA5E5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C637D27E3BE2600BA5E5A /* AppDelegate.swift */; };
-		DA7C638227E3BE2600BA5E5A /* CoinsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C638127E3BE2600BA5E5A /* CoinsViewController.swift */; };
 		DA7C638727E3BE2700BA5E5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7C638627E3BE2700BA5E5A /* Assets.xcassets */; };
 		DA7C638A27E3BE2700BA5E5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA7C638827E3BE2700BA5E5A /* LaunchScreen.storyboard */; };
 		DA7C639427E3C33600BA5E5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA7C639327E3C33600BA5E5A /* Main.storyboard */; };
-		DA7C639627E3C35200BA5E5A /* PaperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C639527E3C35200BA5E5A /* PaperViewController.swift */; };
-		DABD411727E5D43600F379B3 /* MainCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD411627E5D43600F379B3 /* MainCalculator.swift */; };
+		DAC23120293CC04400314826 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DAC2311F293CC04400314826 /* RealmSwift */; };
+		DAC23122293CC1B100314826 /* RecordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC23121293CC1B100314826 /* RecordModel.swift */; };
+		DAC23126293D027400314826 /* MainViewController - Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC23125293D027400314826 /* MainViewController - Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DA2AA0A427E89DE500E8C81F /* RollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollViewController.swift; sourceTree = "<group>"; };
-		DA2D216A27E6FC9F002B5CB9 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		DA2D216C27E6FE08002B5CB9 /* HistoryTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableView.swift; sourceTree = "<group>"; };
-		DA2D217027E7026B002B5CB9 /* customTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = customTableViewCell.xib; sourceTree = "<group>"; };
-		DA2D217227E702C7002B5CB9 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
-		DA592B5627E7165200D8B884 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		DA2D216C27E6FE08002B5CB9 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		DA2D217027E7026B002B5CB9 /* RecordCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecordCell.xib; sourceTree = "<group>"; };
+		DA2D217227E702C7002B5CB9 /* RecordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordCell.swift; sourceTree = "<group>"; };
+		DA4CFAC8293FA36100907DA0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		DA511035293E537C008D0EDF /* RollViewController - Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RollViewController - Extensions.swift"; sourceTree = "<group>"; };
+		DA511037293E5D1E008D0EDF /* StorageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		DA511039293E5F4F008D0EDF /* Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		DA7C637A27E3BE2600BA5E5A /* Kasse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kasse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA7C637D27E3BE2600BA5E5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DA7C638127E3BE2600BA5E5A /* CoinsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsViewController.swift; sourceTree = "<group>"; };
 		DA7C638627E3BE2700BA5E5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA7C638927E3BE2700BA5E5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA7C638B27E3BE2700BA5E5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA7C639327E3C33600BA5E5A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		DA7C639527E3C35200BA5E5A /* PaperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaperViewController.swift; sourceTree = "<group>"; };
-		DABD411627E5D43600F379B3 /* MainCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCalculator.swift; sourceTree = "<group>"; };
+		DAC23121293CC1B100314826 /* RecordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordModel.swift; sourceTree = "<group>"; };
+		DAC23125293D027400314826 /* MainViewController - Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController - Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,39 +48,74 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAC23120293CC04400314826 /* RealmSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DA4EB73727EA2D60004BA383 /* View */ = {
+		DA01D07C2941FC7B005DFF3A /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				DA7C639327E3C33600BA5E5A /* Main.storyboard */,
-				DA7C638827E3BE2700BA5E5A /* LaunchScreen.storyboard */,
-				DA2D217027E7026B002B5CB9 /* customTableViewCell.xib */,
+				DA2D217227E702C7002B5CB9 /* RecordCell.swift */,
+				DA2D217027E7026B002B5CB9 /* RecordCell.xib */,
 			);
-			path = View;
+			path = Cells;
 			sourceTree = "<group>";
 		};
-		DA4EB73827EA2D88004BA383 /* Model */ = {
+		DA1EFFCA2941FB3B00D6BCAE /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				DA2D216927E6FC9F002B5CB9 /* coins.xcdatamodeld */,
+				DA511037293E5D1E008D0EDF /* StorageManager.swift */,
+				DA511039293E5F4F008D0EDF /* Time.swift */,
 			);
-			path = Model;
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DA1EFFCB2941FB6C00D6BCAE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DA7C638827E3BE2700BA5E5A /* LaunchScreen.storyboard */,
+				DA7C639327E3C33600BA5E5A /* Main.storyboard */,
+				DA01D07C2941FC7B005DFF3A /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DA1EFFCC2941FBB200D6BCAE /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DA4CFAC8293FA36100907DA0 /* MainViewController.swift */,
+				DAC23125293D027400314826 /* MainViewController - Extensions.swift */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		DA1EFFCD2941FBBD00D6BCAE /* RollViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DA2AA0A427E89DE500E8C81F /* RollViewController.swift */,
+				DA511035293E537C008D0EDF /* RollViewController - Extensions.swift */,
+			);
+			path = RollViewController;
+			sourceTree = "<group>";
+		};
+		DA4EB73827EA2D88004BA383 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DAC23121293CC1B100314826 /* RecordModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		DA79AC0A28116170004C0A4B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				DA7C638127E3BE2600BA5E5A /* CoinsViewController.swift */,
-				DA7C639527E3C35200BA5E5A /* PaperViewController.swift */,
-				DA2AA0A427E89DE500E8C81F /* RollViewController.swift */,
-				DA2D216C27E6FE08002B5CB9 /* HistoryTableView.swift */,
-				DA592B5627E7165200D8B884 /* DetailsViewController.swift */,
-				DA2D217227E702C7002B5CB9 /* CustomTableViewCell.swift */,
+				DA1EFFCC2941FBB200D6BCAE /* MainViewController */,
+				DA1EFFCD2941FBBD00D6BCAE /* RollViewController */,
+				DA2D216C27E6FE08002B5CB9 /* HistoryViewController.swift */,
+				DA1EFFCB2941FB6C00D6BCAE /* Views */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -86,7 +124,6 @@
 			isa = PBXGroup;
 			children = (
 				DA7C637D27E3BE2600BA5E5A /* AppDelegate.swift */,
-				DABD411627E5D43600F379B3 /* MainCalculator.swift */,
 				DA7C638627E3BE2700BA5E5A /* Assets.xcassets */,
 				DA7C638B27E3BE2700BA5E5A /* Info.plist */,
 			);
@@ -112,10 +149,10 @@
 		DA7C637C27E3BE2600BA5E5A /* Kasse */ = {
 			isa = PBXGroup;
 			children = (
+				DA1EFFCA2941FB3B00D6BCAE /* Helpers */,
 				DA79AC0B28116194004C0A4B /* Supporting Files */,
 				DA79AC0A28116170004C0A4B /* Controllers */,
-				DA4EB73827EA2D88004BA383 /* Model */,
-				DA4EB73727EA2D60004BA383 /* View */,
+				DA4EB73827EA2D88004BA383 /* Models */,
 			);
 			path = Kasse;
 			sourceTree = "<group>";
@@ -136,6 +173,9 @@
 			dependencies = (
 			);
 			name = Kasse;
+			packageProductDependencies = (
+				DAC2311F293CC04400314826 /* RealmSwift */,
+			);
 			productName = coins;
 			productReference = DA7C637A27E3BE2600BA5E5A /* Kasse.app */;
 			productType = "com.apple.product-type.application";
@@ -164,6 +204,9 @@
 				Base,
 			);
 			mainGroup = DA7C637127E3BE2600BA5E5A;
+			packageReferences = (
+				DAC2311E293CC04400314826 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = DA7C637B27E3BE2600BA5E5A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -180,7 +223,7 @@
 			files = (
 				DA7C639427E3C33600BA5E5A /* Main.storyboard in Resources */,
 				DA7C638A27E3BE2700BA5E5A /* LaunchScreen.storyboard in Resources */,
-				DA2D217127E7026C002B5CB9 /* customTableViewCell.xib in Resources */,
+				DA2D217127E7026C002B5CB9 /* RecordCell.xib in Resources */,
 				DA7C638727E3BE2700BA5E5A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,14 +235,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA7C639627E3C35200BA5E5A /* PaperViewController.swift in Sources */,
-				DA7C638227E3BE2600BA5E5A /* CoinsViewController.swift in Sources */,
 				DA2AA0A527E89DE500E8C81F /* RollViewController.swift in Sources */,
-				DA2D216B27E6FC9F002B5CB9 /* coins.xcdatamodeld in Sources */,
-				DA592B5727E7165200D8B884 /* DetailsViewController.swift in Sources */,
-				DA2D217327E702C7002B5CB9 /* CustomTableViewCell.swift in Sources */,
-				DA2D216D27E6FE09002B5CB9 /* HistoryTableView.swift in Sources */,
-				DABD411727E5D43600F379B3 /* MainCalculator.swift in Sources */,
+				DA511038293E5D1E008D0EDF /* StorageManager.swift in Sources */,
+				DA511036293E537C008D0EDF /* RollViewController - Extensions.swift in Sources */,
+				DA51103A293E5F4F008D0EDF /* Time.swift in Sources */,
+				DA4CFAC9293FA36100907DA0 /* MainViewController.swift in Sources */,
+				DA2D217327E702C7002B5CB9 /* RecordCell.swift in Sources */,
+				DA2D216D27E6FE09002B5CB9 /* HistoryViewController.swift in Sources */,
+				DAC23122293CC1B100314826 /* RecordModel.swift in Sources */,
+				DAC23126293D027400314826 /* MainViewController - Extensions.swift in Sources */,
 				DA7C637E27E3BE2600BA5E5A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,14 +393,14 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
 				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.5;
+				MARKETING_VERSION = 3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = mttm1249.coins;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -380,14 +424,14 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
 				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.5;
+				MARKETING_VERSION = 3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = mttm1249.coins;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -419,18 +463,24 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCVersionGroup section */
-		DA2D216927E6FC9F002B5CB9 /* coins.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				DA2D216A27E6FC9F002B5CB9 /* Model.xcdatamodel */,
-			);
-			currentVersion = DA2D216A27E6FC9F002B5CB9 /* Model.xcdatamodel */;
-			path = coins.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
+/* Begin XCRemoteSwiftPackageReference section */
+		DAC2311E293CC04400314826 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
 		};
-/* End XCVersionGroup section */
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DAC2311F293CC04400314826 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DAC2311E293CC04400314826 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DA7C637227E3BE2600BA5E5A /* Project object */;
 }
