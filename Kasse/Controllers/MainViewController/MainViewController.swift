@@ -12,12 +12,14 @@ class MainViewController: UIViewController {
     // activate vibration
     let feedbackGenerator = UIImpactFeedbackGenerator(style: .heavy)
     
+    let userDefaults = UserDefaults.standard
     let time = Time()
     
     var currentRecord: RecordModel!
-    var defaultValue = 0.0
     var totalCoins = 0.0
     var totalPaper = 0.0
+    var defaultValue = 0.0
+    var generallyTotal = 0.0
     
     // MARK: - TF and Labels
     
@@ -99,7 +101,14 @@ class MainViewController: UIViewController {
     @IBAction func saveButtonAction(_ sender: Any) {
         feedbackGenerator.impactOccurred()
         DispatchQueue.main.async {
-            self.save()
+            let moneySwitcherActive = self.userDefaults.bool(forKey: "moneySwitcher")
+            if moneySwitcherActive {
+                self.save()
+                self.getExtraAmount()
+            } else {
+                self.save()
+                self.getAmount()
+            }
         }
     }
     

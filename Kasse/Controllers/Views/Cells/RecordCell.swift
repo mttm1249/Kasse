@@ -17,4 +17,10 @@ class RecordCell: UITableViewCell {
         recordDateLabel.text = model.date
     }
     
+    override func setSelected(_ selected: Bool, animated: Bool) {
+            super.setSelected(selected, animated: animated)
+            let bgColorView = UIView()
+            bgColorView.backgroundColor = #colorLiteral(red: 0.1294117868, green: 0.1294117868, blue: 0.1294117868, alpha: 1)
+            self.selectedBackgroundView = bgColorView
+        }
 }

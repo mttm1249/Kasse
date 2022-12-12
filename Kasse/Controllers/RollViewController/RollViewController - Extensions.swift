@@ -84,7 +84,7 @@ extension RollenViewController {
     }
     
     @objc func fiveCentLongPress(gesture: UILongPressGestureRecognizer) {
-        if gesture.state == UIGestureRecognizer.State.began {
+        if gesture.state == .began {
             guard fiveCentCounter != 0 else { return }
             fiveCentValue -= 2.50
             fiveCentCounter -= 1
@@ -98,7 +98,7 @@ extension RollenViewController {
     }
     
     @objc func tenCentLongPress(gesture: UILongPressGestureRecognizer) {
-        if gesture.state == UIGestureRecognizer.State.began {
+        if gesture.state == .began {
             guard tenCentCounter != 0 else { return }
             tenCentValue -= 4.00
             tenCentCounter -= 1
@@ -112,7 +112,7 @@ extension RollenViewController {
     }
     
     @objc func twentyCentLongPress(gesture: UILongPressGestureRecognizer) {
-        if gesture.state == UIGestureRecognizer.State.began {
+        if gesture.state == .began {
             guard twentyCentCounter != 0 else { return }
             twentyCentValue -= 8.00
             twentyCentCounter -= 1
@@ -126,7 +126,7 @@ extension RollenViewController {
     }
     
     @objc func fiftyCentLongPress(gesture: UILongPressGestureRecognizer) {
-        if gesture.state == UIGestureRecognizer.State.began {
+        if gesture.state == .began {
             guard fiftyCentCounter != 0 else { return }
             fiftyCentValue -= 20.00
             fiftyCentCounter -= 1
@@ -140,7 +140,7 @@ extension RollenViewController {
     }
     
     @objc func oneEuroLongPress(gesture: UILongPressGestureRecognizer) {
-        if gesture.state == UIGestureRecognizer.State.began {
+        if gesture.state == .began {
             guard oneEuroCounter != 0 else { return }
             oneEuroValue -= 25.00
             oneEuroCounter -= 1
@@ -154,7 +154,7 @@ extension RollenViewController {
     }
     
     @objc func twoEuroLongPress(gesture: UILongPressGestureRecognizer) {
-        if gesture.state == UIGestureRecognizer.State.began {
+        if gesture.state == .began {
             guard twoEuroCounter != 0 else { return }
             twoEuroValue -= 50.00
             twoEuroCounter -= 1
@@ -168,12 +168,8 @@ extension RollenViewController {
     }
     
     @objc func oneOneOneEuroLongPress(gesture: UILongPressGestureRecognizer) {
-        if gesture.state == UIGestureRecognizer.State.began {
-//            guard oneOneOneEuroCounter != 0 else { return }
-//            oneOneOneEuroValue -= 111.00
-//            oneOneOneEuroCounter -= 1
-//            deleteFromTotal(value: 50.00)
-//            hundredEuroLabel.text = "111€: \(NSString(format: "%.2f", oneOneOneEuroValue))€ (\(oneOneOneEuroCounter))"
+        if gesture.state == .began {
+
         }
     }
     

@@ -15,11 +15,12 @@
 		DA511036293E537C008D0EDF /* RollViewController - Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA511035293E537C008D0EDF /* RollViewController - Extensions.swift */; };
 		DA511038293E5D1E008D0EDF /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA511037293E5D1E008D0EDF /* StorageManager.swift */; };
 		DA51103A293E5F4F008D0EDF /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA511039293E5F4F008D0EDF /* Time.swift */; };
+		DA5CFFFE2947288D00BAC4D5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5CFFFD2947288D00BAC4D5 /* SettingsViewController.swift */; };
+		DA70131429427F07006D1F6A /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DA70131329427F07006D1F6A /* RealmSwift */; };
 		DA7C637E27E3BE2600BA5E5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C637D27E3BE2600BA5E5A /* AppDelegate.swift */; };
 		DA7C638727E3BE2700BA5E5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7C638627E3BE2700BA5E5A /* Assets.xcassets */; };
 		DA7C638A27E3BE2700BA5E5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA7C638827E3BE2700BA5E5A /* LaunchScreen.storyboard */; };
 		DA7C639427E3C33600BA5E5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA7C639327E3C33600BA5E5A /* Main.storyboard */; };
-		DAC23120293CC04400314826 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DAC2311F293CC04400314826 /* RealmSwift */; };
 		DAC23122293CC1B100314826 /* RecordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC23121293CC1B100314826 /* RecordModel.swift */; };
 		DAC23126293D027400314826 /* MainViewController - Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC23125293D027400314826 /* MainViewController - Extensions.swift */; };
 /* End PBXBuildFile section */
@@ -33,6 +34,7 @@
 		DA511035293E537C008D0EDF /* RollViewController - Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RollViewController - Extensions.swift"; sourceTree = "<group>"; };
 		DA511037293E5D1E008D0EDF /* StorageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		DA511039293E5F4F008D0EDF /* Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		DA5CFFFD2947288D00BAC4D5 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		DA7C637A27E3BE2600BA5E5A /* Kasse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kasse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA7C637D27E3BE2600BA5E5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA7C638627E3BE2700BA5E5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAC23120293CC04400314826 /* RealmSwift in Frameworks */,
+				DA70131429427F07006D1F6A /* RealmSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +117,7 @@
 				DA1EFFCC2941FBB200D6BCAE /* MainViewController */,
 				DA1EFFCD2941FBBD00D6BCAE /* RollViewController */,
 				DA2D216C27E6FE08002B5CB9 /* HistoryViewController.swift */,
+				DA5CFFFD2947288D00BAC4D5 /* SettingsViewController.swift */,
 				DA1EFFCB2941FB6C00D6BCAE /* Views */,
 			);
 			path = Controllers;
@@ -174,7 +177,7 @@
 			);
 			name = Kasse;
 			packageProductDependencies = (
-				DAC2311F293CC04400314826 /* RealmSwift */,
+				DA70131329427F07006D1F6A /* RealmSwift */,
 			);
 			productName = coins;
 			productReference = DA7C637A27E3BE2600BA5E5A /* Kasse.app */;
@@ -205,7 +208,7 @@
 			);
 			mainGroup = DA7C637127E3BE2600BA5E5A;
 			packageReferences = (
-				DAC2311E293CC04400314826 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				DA70131229427F07006D1F6A /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = DA7C637B27E3BE2600BA5E5A /* Products */;
 			projectDirPath = "";
@@ -237,6 +240,7 @@
 			files = (
 				DA2AA0A527E89DE500E8C81F /* RollViewController.swift in Sources */,
 				DA511038293E5D1E008D0EDF /* StorageManager.swift in Sources */,
+				DA5CFFFE2947288D00BAC4D5 /* SettingsViewController.swift in Sources */,
 				DA511036293E537C008D0EDF /* RollViewController - Extensions.swift in Sources */,
 				DA51103A293E5F4F008D0EDF /* Time.swift in Sources */,
 				DA4CFAC9293FA36100907DA0 /* MainViewController.swift in Sources */,
@@ -388,6 +392,7 @@
 				DEVELOPMENT_TEAM = KG89CXC5J4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Kasse/Supporting Files/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -400,7 +405,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.1;
+				MARKETING_VERSION = 3.7;
 				PRODUCT_BUNDLE_IDENTIFIER = mttm1249.coins;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -419,6 +424,7 @@
 				DEVELOPMENT_TEAM = KG89CXC5J4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Kasse/Supporting Files/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -431,7 +437,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.1;
+				MARKETING_VERSION = 3.7;
 				PRODUCT_BUNDLE_IDENTIFIER = mttm1249.coins;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -464,7 +470,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		DAC2311E293CC04400314826 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+		DA70131229427F07006D1F6A /* XCRemoteSwiftPackageReference "realm-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-swift.git";
 			requirement = {
@@ -475,9 +481,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		DAC2311F293CC04400314826 /* RealmSwift */ = {
+		DA70131329427F07006D1F6A /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DAC2311E293CC04400314826 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			package = DA70131229427F07006D1F6A /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */

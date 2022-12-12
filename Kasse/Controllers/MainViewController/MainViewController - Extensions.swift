@@ -155,9 +155,8 @@ extension MainViewController {
     }
     
     func getTotal() {
-        let total = totalCoins + totalPaper
-        generallyTotalLabel.text = "Gesamt: \(NSString(format: "%.2f", total))€"
-//        calculator.generallyTotall = "Gesamt: \(NSString(format: "%.2f", total))€"
+        generallyTotal = totalCoins + totalPaper
+        generallyTotalLabel.text = "Gesamt: \(NSString(format: "%.2f", generallyTotal))€"
     }
     
     func reset() {
@@ -178,6 +177,7 @@ extension MainViewController {
         
         totalCoins = 0.0
         totalPaper = 0.0
+        generallyTotal = 0.0
     }
     
     func showAlert() {
@@ -227,7 +227,7 @@ extension MainViewController {
                                     hundredEuroResult: hundredEuroResult.text,
                                     twoHundredEuro: twoHundredEuro.text,
                                     twoHundredEuroResult: twoHundredEuroResult.text)
-        if currentRecord == nil {
+        if currentRecord == nil && generallyTotal != 0.0 {
             StorageManager.saveObject(newRecord)
         }
     }
@@ -275,6 +275,20 @@ extension MainViewController {
             grabber.isHidden = true
             saveButton.isHidden = false
             resetButton.isHidden = false
+        }
+    }
+    
+    func getExtraAmount() {
+        if generallyTotal != 0.0 {
+            let a = 400.00
+            let result = generallyTotal - a
+            generallyTotalLabel.text = "Gesamt: \(NSString(format: "%.2f", generallyTotal))€  (-\(NSString(format: "%.2f", result)))"
+        }
+    }
+    
+    func getAmount() {
+        if generallyTotal != 0.0 {
+            generallyTotalLabel.text = "Gesamt: \(NSString(format: "%.2f", generallyTotal))€"
         }
     }
 }

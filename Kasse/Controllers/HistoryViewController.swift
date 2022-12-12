@@ -10,7 +10,7 @@ import UIKit
 
 class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    var records: Results<RecordModel>!
+    private var records: Results<RecordModel>!
 
     @IBOutlet weak var tableView: UITableView!
 
@@ -56,12 +56,6 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
         return swipeActions
     }
 
-
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        guard let mainVC =  segue.destination as? MainViewController else { return }
-//
-//    }
-
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let mainVC = storyboard?.instantiateViewController(withIdentifier: "MainVC") as? MainViewController else { return }
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
@@ -70,21 +64,6 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
         present(mainVC, animated: true)
     }
 
-    @IBAction func deleteAllRecordsButton(_ sender: Any) {
-
-        let alertController = UIAlertController(title: "Achtung!", message: "Alle gespeicherte Daten löschen?", preferredStyle: .alert)
-        let deleteAction = UIAlertAction(title: "Ja", style: .destructive) { action in
-         
-            print("all records deleted")
-        }
-
-        let cancelAction = UIAlertAction(title: "Abbrechen", style: .default) { _ in }
-
-        alertController.addAction(deleteAction)
-        alertController.addAction(cancelAction)
-
-        present(alertController, animated: true, completion: nil)
-    }
 }
 
 
