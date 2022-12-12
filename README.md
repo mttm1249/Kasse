@@ -17,4 +17,10 @@
 
 <img src="https://user-images.githubusercontent.com/87662841/207022401-45c24d2d-7159-428e-81de-026596fd9e7d.jpg" width="230" height="500">
 
+## Installation: 
+1. Download archive with project.
+2. Unzip it.
+3. Open with Xcode.
+4. Install on iPhone with iOS 12.4+
+
 #### Stack: Swift, UIKit, UserDefaults, RealmSwift
