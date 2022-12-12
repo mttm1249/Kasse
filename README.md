@@ -3,14 +3,18 @@
 ## This application helps to count coins and banknotes
 
 ### Enter quantity
-<img src="https://user-images.githubusercontent.com/87662841/164260361-5426e346-772b-4b5f-ad12-a577e9796698.png" width="230" height="530"> <img src="https://user-images.githubusercontent.com/87662841/164260373-6d7c9e2c-97c7-44b9-abf9-7795ad2f200a.png" width="230" height="530">   
+<img src="https://user-images.githubusercontent.com/87662841/207021718-7b56bf33-02d8-46e2-9a00-04e66d4fb8c8.jpg" width="230" height="500"> 
 
-### Results can be saved and deleted
+### Results can be saved and viewed 
 
-<img src="https://user-images.githubusercontent.com/87662841/164260394-296b1d5e-31df-4309-bccd-611f27391002.png" width="230" height="530"> <img src="https://user-images.githubusercontent.com/87662841/164260400-cdd8d208-0827-4713-93d8-4c29f268d9ad.png" width="230" height="530">  
+<img src="https://user-images.githubusercontent.com/87662841/207022010-304d4c31-3173-4764-a802-9b9b555a33cb.jpg" width="230" height="500"> <img src="https://user-images.githubusercontent.com/87662841/207022024-c8bcee0c-3610-41f7-911d-ef0270563873.jpg" width="230" height="500">  
 
 ### You can count money in packages
 
-![](https://user-images.githubusercontent.com/87662841/164262486-5c73c8f8-8bdf-492b-a45e-32134b31f21b.gif)
+<img src="https://user-images.githubusercontent.com/87662841/207022188-dd5b455f-ad3c-4985-8722-a4e10419b3c8.jpg" width="230" height="500">
 
-#### Stack: Swift, UIKit, UserDefaults, CoreData
+### Settings
+
+<img src="https://user-images.githubusercontent.com/87662841/207022401-45c24d2d-7159-428e-81de-026596fd9e7d.jpg" width="230" height="500">
+
+#### Stack: Swift, UIKit, UserDefaults, RealmSwift
